@@ -26,7 +26,7 @@
     <%= f.text_field :value %>
   </div>
 
-  <div class="dropdown-menu">
+  <div>
 	<%= f.label :user_id %>
 	<%= f.collection_select :user_id, User.all, :id, :full_name, include_blank: true %>
   </div>

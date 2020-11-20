@@ -10,6 +10,19 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  def search
+    #byebug
+    if params[:search].blank?  
+      @users = User.all
+    render(:index, alert: "Empty field!") and return  
+  else 
+      @parameter = params[:search].downcase  
+    @users = User.all.where("lower(first_name) LIKE :search", search: "%#{@parameter}%")
+    render(:index) and return
+  
+	end  
+  end
+
   # GET /users/1
   # GET /users/1.json
   def show

@@ -7,8 +7,8 @@
     <tr>
       <th>Name</th>
       <th>Trainer</th>
-	  <th>Value</th>
-	  <th>User_id</th>
+      <th>Value</th>
+      <th>User_id</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,10 +16,10 @@
   <tbody>
     <% @sectors.each do |sector| %>
       <tr>
-        <td><%= sector.product_name %></td>
-        <td><%= sector.product_count %></td>
-		<td><%= sector.value %></td>
-		<td><%= sector.user_id %></td> 
+        <td><%= sector.name %></td>
+        <td><%= sector.trainer %></td>
+        <td><%= sector.value %></td>
+        <td><%= sector.user_id %></td> 
         <td><%= link_to 'Show', sector %></td>
         <td><%= link_to 'Edit', edit_sector_path(sector) %></td>
         <td><%= link_to 'Destroy', sector, method: :delete, data: { confirm: 'Are you sure?' } %></td>
