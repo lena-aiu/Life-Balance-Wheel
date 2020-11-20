@@ -1,6 +1,6 @@
 # Life_Balance_Wheel
 
-*11/14/2020 is the recent updates to the codebase.*
+*11/19/2020 is the recent updates to the codebase.*
 
 #### Repository  Life_Balance_Wheel
 -----
@@ -26,7 +26,7 @@ Data Models *
 - Validation of attributes for Users, Activities, Exercises information.
 - CRUD operations for models in controllers.
 - Views for index, new, edit, and show pages.
-- Forms controls, links, css and Bootstrap controls, images, colors, fonts.
+- Forms controls, links, css and Bootstrap controls, images, colors, fonts, dropdown, search.
 - Rspec for testing some of CRUD operations
 
 Also:
@@ -37,7 +37,7 @@ My improving plan for this project:
 
 * Call the API using AJAX, from a front end application. 
 * Create models for Registration, Sing in, Sing Up.
-* Fix issues (dropdown filed, navigation, alerts hidden by navigation on destroy method on Controllers, Validation for Exercises, background image on jumbotron).
+* Fix issues (Validation for Exercises, background image on jumbotron).
 
 PS: After you clone repository, be sure to run bundle install before you try to bring up the code.
 
